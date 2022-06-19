@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap-5</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">
+      Welcome to Blog Home!
+    </h1>
+    <p class="text-center mb-5">
+      A Bootstrap 5 starter layout for your next blog homepage
+    </p>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-8">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="https://via.placeholder.com/850x350" class="card-img-top" alt="...">
+          <div class="card-body">
+            <time class="text-secondary d-block mb-2" datetime="2022 1 1">January 1 2022</time>
+            <h5 class="card-title">Featured Post Title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores repudiandae magni ipsam quasi sed dignissimos dicta inventore officia facilis consectetur ab dolorum error nesciunt, vero quas, suscipit consequatur voluptatibus ad?
+            </p>
+            <a href="#" class="btn btn-primary">
+              <span class="me-2">
+                Read more
+              </span>
+              <img src="./images/next.png" alt="arrow to right">
+            </a>
+          </div>
+        </div>
+
+        <div class="row w-100 gx-3 d-flex mt-4 justify-content-between">
+
+          <div class="col-6 w-50">
+            <div class="card w-100" style="width: 18rem;">
+              <img src="https://via.placeholder.com/700x350" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit eos nam!
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 w-50">
+            <div class="card w-100" style="width: 18rem;">
+              <img src="https://via.placeholder.com/700x350" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur voluptatem libero?
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+
+        <nav class="w-25 mx-auto" aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Newer</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">15</a></li>
+            <li class="page-item"><a class="page-link" href="#">Elder</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="col-4">
+
+
+        <div class="card w-100 mb-4" style="width: 18rem;">
+          <div class="card-header">
+            Search
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter search term..."
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="submit" id="button-addon2">Go!</button>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
